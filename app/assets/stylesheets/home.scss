@@ -1,29 +1,87 @@
 // Place all the styles related to the Home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body{
+    padding-left:5vw;
+    padding-right:5vw;
+    background-color:#1896b3;
+
+}
 header {
-    height: 50px;
+    border-radius:15px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: white;
+    background-color: #2ecc71    ;
     border-bottom: 1px solid grey;
+
+    
     div.logo {
         img {
-            height: 50px;   
+            padding-left:15px;
+            
+            height: 51px;   
+            border-radius:25px;
         }
     }
 
     nav {
+    padding-right:50px;
         ul{
-            display: flex;
+            display: flex;  
+            text-decoration: none;
             li{
-                list-style: none;
-                margin-right: 10px;
+
+        a:link, a:visited {
+             background-color: #f44336;
+             color: white;
+             padding: 14px 25px;
+             text-align: center; 
+             text-decoration: none;
+             display: inline-block;
+             border-radius:30px;
+            }
+                list-style:none;
+                padding-right:20px;
+               
             }
         }
     }
 }
+main {
+widht:100vw;
+justify-content:space-between;
+display: flex;
+    aside.left{
+        width:15%;
+        margin-right:20px;
+        order:1;
+        background:yellow;
+        
+    }
+     aside.right{
+      background:blue;
+        width:15%;
+        order:3;
+    }
+
+    section{
+        width:60%;
+        background:red;
+            order:2;
+            margin-right:20px;
+        
+        
+
+        }
+}
+
+
+
+
+
+
 #question_{
     background:#f4f4f4;
     color:blue;

@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
-  devise_for :users
-    root 'home#index'
+
+     devise_for :users
+  root 'home#index'
+  get 'tags' => 'home#tags'
+  get 'tt' =>'home#tt'
+  get 'users' => 'home#users'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

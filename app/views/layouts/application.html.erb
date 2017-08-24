@@ -7,6 +7,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+
 <% if notice %>
  <script type="text/javascript">
  	noty({text: '<%= notice %>', type: 'alert'});
@@ -22,16 +23,22 @@
  </script>
  <% end %>
  <% if user_signed_in? %>
-
  <header>
- 
- <nav>
- <ul>
-<li><%= link_to "Sign Out",destroy_user_session_path,method: :delete %></li>
+<div class="logo">
+<%=link_to image_tag("logo_f.jpeg"),root_path%>
+
+</div>
+<nav>
+<ul>
+<li>  <%= link_to "User",users_path,method: :get %></li>
+<li>  <%= link_to "Tags",tags_path,method: :get %></li>
+<li>  <%= link_to "Sign Out",destroy_user_session_path,method: :delete %></li>
 </ul>
-</nav> 
+</nav>
 </header>
+
 <%end%> 
+
 <%= yield %>
 
 </body>
