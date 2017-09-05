@@ -15,3 +15,4 @@
 //= require turbolinks
 //= require_tree .
 //= require jquery.noty.packaged.min.js
+//= require bootstrap-sprockets
